@@ -19,6 +19,7 @@ void insertion_sort(char* file_name ,int num_obj, int obj_size, int obj_space, i
 {
     //Sort objects
     //_______________________________________________________________________________________________________________
+    
     char key[obj_size];
     
     for (int i = 1, j; i < num_obj; i++) {
@@ -38,10 +39,13 @@ void insertion_sort(char* file_name ,int num_obj, int obj_size, int obj_space, i
     //get new name
     //_______________________________________________________________________________________________________________
     
-    
     char sort[] = "_sorted", txt[] = ".txt";
     char new_file[strlen(file_name) + strlen(sort) + 1];
+
+    //copy the name without the .txt
     memcpy(new_file,file_name,strlen(file_name) - strlen(txt));
+    
+    //write the filename_sorted.txt
     for(int i = 0; i < strlen(sort) + strlen(txt) + 1; i++)
     {
         if(i < strlen(sort))
@@ -57,10 +61,14 @@ void insertion_sort(char* file_name ,int num_obj, int obj_size, int obj_space, i
             new_file[strlen(file_name) - strlen(txt) + i] = '\0';
         }
     }
+
     //_______________________________________________________________________________________________________________
-    //make sorted file
-    char enter = '\n', space = ' ';
     
+    //writes the new ordered file
+    //_______________________________________________________________________________________________________________
+
+    char enter = '\n', space = ' ';
+
     FILE *file = fopen(new_file, "w");
 
     for(int i = 0; i < num_obj; i++)
@@ -80,4 +88,5 @@ void insertion_sort(char* file_name ,int num_obj, int obj_size, int obj_space, i
             }
         }     
     }
+    //_______________________________________________________________________________________________________________
 }
