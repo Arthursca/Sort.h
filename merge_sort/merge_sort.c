@@ -1,23 +1,11 @@
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
+#include "..\utils\utils.c"
 
 
-void copy(void * a, void * b, size_t len);
 long merge(void *base, size_t size, int (*compar)(const void *, const void*), int left, int right, int middle);
 long msort(void *base, size_t size, int (*compar)(const void *, const void*), int left, int right);
 
-
-void copy(void * a, void * b, size_t len)
-{
-    unsigned char * p = a, * q = b, tmp;
-    for (size_t i = 0; i != len; ++i)
-    {
-        p[i] = q[i];
-    }
-}
 
 long msort(void *base, size_t size, int (*compar)(const void *, const void*), int left, int right)
 {
