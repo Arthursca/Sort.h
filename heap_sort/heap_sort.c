@@ -1,19 +1,10 @@
 #include <stdio.h>
+#include "..\utils\utils.c"
 
-long swap(void * a, void * b, size_t size);
 long hsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*));
 long heap(void *base, size_t size, int (*compar)(const void *, const void*),int n ,int i) ;
 
-long swap(void * a, void * b, size_t size)
-{
-    unsigned char * p = a, * q = b, tmp;
-    for (size_t i = 0; i != size; ++i)
-    {
-        tmp = p[i];
-        p[i] = q[i];
-        q[i] = tmp;
-    }
-}
+
 
 long hsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*))
 {
