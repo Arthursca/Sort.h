@@ -1,0 +1,5 @@
+#include "bubble_sort/bubble_sort.h"
+#include "heap_sort/heap_sort.h"
+#include "insertion_sort/insertion_sort.h"
+#include "merge_sort/merge_sort.h"
+#include "utils/utils.h"
