@@ -20,7 +20,7 @@ int main(void)
     long steps = isort(arr,arr_size ,sizeof(int), compar);
 
     //print the number of steps
-    printf("%d\n", steps);
+    printf("%ld\n", steps);
 
     //print sorted array
     for(int i = 0; i < arr_size; i++)
