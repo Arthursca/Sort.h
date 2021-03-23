@@ -100,3 +100,7 @@ int main(void)
 - [ ] implements basic sorts for trees
 - [ ] implements basic sorts for files
 - [ ] implements more sorts
+
+## :key: License
+
+MIT © [Arthur Scanoni](https://www.linkedin.com/in/arthur-scanoni-6b796b194/)
