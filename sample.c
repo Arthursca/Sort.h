@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "sort.c"
+#include "sort.h"
 
 //Create the compar
 int compar(const void* a, const void* b)
