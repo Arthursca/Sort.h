@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "..\utils\utils.c"
+#include "../utils/utils.h"
+#include "merge_sort.h"
 
 
 long merge(void *base, size_t size, int (*compar)(const void *, const void*), int left, int right, int middle);
