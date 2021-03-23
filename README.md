@@ -19,7 +19,7 @@ to use each of these functions we have to pass at least 4 parameters.
 (this function will give you how your array will be ordered).
 
 2. Sample:
-```
+``` c
 #include <stdio.h>
 #include "sort.h"
 
@@ -57,7 +57,7 @@ int main(void)
 (this function will give you how your array will be ordered), 0 and  the array size - 1 (also works with the array size but it takes more steps to complete)
 
 2. Sample:
-```
+``` c
 #include <stdio.h>
 #include "sort.h"
 
