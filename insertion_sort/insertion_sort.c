@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "..\utils\utils.c"
+#include "../utils/utils.h"
+#include "insertion_sort.h"
 
 
 long isort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*));
