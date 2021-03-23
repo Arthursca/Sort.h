@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "..\utils\utils.c"
+#include "../utils/utils.h"
+#include "heap_sort.h"
 
 long hsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*));
 long heap(void *base, size_t size, int (*compar)(const void *, const void*),int n ,int i) ;
